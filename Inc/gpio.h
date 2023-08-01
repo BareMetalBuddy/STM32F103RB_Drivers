@@ -1,10 +1,7 @@
-
 #ifndef DRIVERS_INCLUDE_GPIO_H_
 #define DRIVERS_INCLUDE_GPIO_H_
 
 #include <stdint.h>
-
-
 
 #define GPIOA_BASE_ADDRESS (0x40010800)
 #define GPIOB_BASE_ADDRESS (0x40010C00)
@@ -16,10 +13,9 @@
 
 #define RESET_REGISTER 0x03
 
-
 typedef struct
 {
-	volatile uint32_t CLR;
+	volatile uint32_t CRL;
 	volatile uint32_t CRH;
 	volatile uint32_t IDR;
 	volatile uint32_t ODR;

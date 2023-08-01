@@ -41,6 +41,8 @@ typedef struct
 #define RCC_USART2_CLOCK_ENABLE() (*((uint32_t*)RCC_APB1ENR) |=(1<<17))
 #define RCC_USART3_CLOCK_ENABLE() (*((uint32_t*)RCC_APB1ENR) |=(1<<18))
 
-
+// I2C bus enable clock
+#define RCC_I2C1_CLOCK_ENABLE() (*((uint32_t*)RCC_APB1ENR) |=(1<<21))
+#define RCC_I2C2_CLOCK_ENABLE() (*((uint32_t*)RCC_APB1ENR) |=(1<<22))
 
 #endif /* DRIVERS_INCLUDE_RCC_H_ */
